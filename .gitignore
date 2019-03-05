@@ -104,4 +104,6 @@ venv.bak/
 .mypy_cache/
 
 # Starting folder just info locally
-Starting/
+0. Starting/
+img/
+.vscode/

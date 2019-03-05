@@ -47,7 +47,7 @@ class Club:
             self._params.update({k: v})
         if len(self._params.keys())>0:
             self.name=self._params['short_club_name']
-            self.uID=self._params['uID']
+            self.tID=self._params['uID']
         else:
             self.name=None
         
@@ -66,7 +66,7 @@ class Club:
         for _, player in self._player.items():
             params_dict.append(player._params)
         df=pd.DataFrame(params_dict).set_index('uID')
-        df['tID']=self.uID
+        df['tID']=self.tID
         return df
     
     def display(self):
